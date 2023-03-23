@@ -1,0 +1,143 @@
+#home-section {
+  height: 178px;
+  position: relative;
+}
+#home-section::before {
+  content: "";
+  background-image: url(./images/projectSection/p-home.png);
+  height: 340px;
+  z-index: -1;
+  opacity: 1;
+}
+.home > h1 {
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.back-home {
+  display: flex;
+}
+.project-h {
+  font-family: "Source Sans Pro", sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 200;
+  margin-right: 5px;
+}
+
+#project-section {
+  margin: 0 2rem;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-block: 3rem;
+}
+
+.container {
+  position: relative;
+  width: 500px;
+  margin: 14px;
+}
+
+.images {
+  cursor: auto;
+}
+
+.container:hover .images {
+  opacity: 1;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-size: 16px;
+  padding: 8px 32px;
+}
+.text h1 {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.button {
+  display: block;
+  margin: auto;
+}
+
+/* media query */
+
+@media (max-width: 1122px) {
+  .container {
+    width: 395px;
+  }
+}
+@media (max-width: 910px) {
+  #home-section {
+    height: 100px;
+    position: relative;
+  }
+  #home-section::before {
+    height: 299px;
+  }
+  .h1-primary {
+    font-size: 2rem;
+  }
+  .menu-bar {
+    font-size: 12px;
+    margin: 10px 0px;
+    font-weight: 500;
+  }
+  .container {
+    width: 315px;
+  }
+  .text h1 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 751px) {
+  .container {
+    width: 245px;
+  }
+  .text h1 {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    font-weight: 900;
+  }
+}
+@media (max-width: 612px) {
+  .home > h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  #project-section {
+    margin: 0 0rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+  }
+  .container {
+    width: 508px;
+  }
+  .text {
+    padding: 8px 0px;
+  }
+  .text h1 {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 900;
+  }
+  .footer-top h1 {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,9 @@
+#skills-section {
+  margin-top: 10rem;
+}
+.fa-angle-down {
+  color: white;
+  float: right;
+  margin-top: 9px;
+  cursor: pointer;
+}
